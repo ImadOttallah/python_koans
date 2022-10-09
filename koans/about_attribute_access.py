@@ -46,7 +46,8 @@ class AboutAttributeAccess(Koan):
         try:
             catcher.foobaz(1)
         except TypeError as ex:
-            err_msg = ex.args[0]
+            err_msg = ex.args[0] 
+            
 
         self.assertRegex(err_msg, __)
 
